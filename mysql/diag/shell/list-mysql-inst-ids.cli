@@ -36,6 +36,7 @@ for inst in `aws rds describe-db-instances --region $region | grep DBInstanceIde
   if [[ $db_engine =~ .*mysql.* ]] ; then
 	echo $inst 
   fi   
+echo "hello"
 done
 
 
